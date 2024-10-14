@@ -9,10 +9,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 6641373618132299482}
-  - component: {fileID: 3555637499547461538}
+  - component: {fileID: -2837876632209832757}
   - component: {fileID: 1550567000440786924}
-  - component: {fileID: 5572319142080400387}
   - component: {fileID: 3701278003344409916}
+  - component: {fileID: 1069099598503881613}
   - component: {fileID: -8342853120241943804}
   m_Layer: 0
   m_Name: Projectile
@@ -31,19 +31,19 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: -0, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.8, z: 0.2}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &3555637499547461538
+--- !u!33 &-2837876632209832757
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7535396057433393684}
-  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!23 &1550567000440786924
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -89,8 +89,22 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!136 &5572319142080400387
-CapsuleCollider:
+--- !u!114 &3701278003344409916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7535396057433393684}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8bfa2f5b0287fb24985c8f0986a98d57, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startSpeed: 24
+  lifeTime: 6
+--- !u!135 &1069099598503881613
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -107,24 +121,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
+  serializedVersion: 3
   m_Radius: 0.5
-  m_Height: 2
-  m_Direction: 2
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &3701278003344409916
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7535396057433393684}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8bfa2f5b0287fb24985c8f0986a98d57, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startSpeed: 12
 --- !u!54 &-8342853120241943804
 Rigidbody:
   m_ObjectHideFlags: 0
